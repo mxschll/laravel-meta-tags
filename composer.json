@@ -1,0 +1,29 @@
+{
+    "name": "mxschll/laravel-meta-tags",
+    "description": "Better SEO for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "orchestra/testbench": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "mxschll\\MetaTags\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mxschll\\MetaTags\\MetaTagsServiceProvider"
+            ],
+            "aliases": {
+                "Meta": "mxschll\\MetaTags\\Facades\\MetaTags"
+            }
+        }
+    }
+}
