@@ -317,6 +317,19 @@ class MetaTags
         $this->charset = $value;
     }
 
+    /**
+     * Set image meta tags.
+     * 
+     * @param string $value url
+     * 
+     * @return void
+     */
+    private function setImage(string $value): void
+    {
+        $this->set('twitter:image', $value);
+        $this->set('og:image', $value);
+    }
+
     /*
     |--------------------------------------------------------------------------
     | Special Tags Builders
