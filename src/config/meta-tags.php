@@ -57,7 +57,7 @@ return [
                 'description'       => '', // Short description of the document
                 'subject'           => '',
                 'keywords'          => '',
-                'referrer'          => 'origin',
+                'referrer'          => 'same-origin',
                 'rating'            => 'general',
                 'format-detection'  => '',
                 'robots'            => 'index,follow',
